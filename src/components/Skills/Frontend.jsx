@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 
 const Frontend = () => {
   return (
@@ -28,6 +29,8 @@ const Frontend = () => {
               </span>
             </div>
           </div>
+</div>
+<div className="skills_group">
           <div className="skills_data">
             <i className="bx bx-badge-check"></i>
             <div>
