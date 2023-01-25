@@ -4,8 +4,8 @@
 
 .home_content {
   grid-template-columns: 116px repeat(2, 1fr);
-  padding: 5.5rem;
-  column-gap: 2rem;
+  padding: 2.5rem;
+  column-gap: 0rem;
   align-items: center;
 }
 
@@ -57,7 +57,7 @@
 .home_subtitle {
   position: relative;
   font-size: var(--h3-font-size);
-  padding-left: 5.4rem;
+  padding-left: 1.5rem;
   font-weight: var(--font-normal);
   margin-bottom: var(--mb-1);
 }
@@ -78,7 +78,8 @@
 }
 
 .home_scroll {
-  margin-left: 5.25rem;
+  margin-left: 2.25rem;
+  text-align: left;
 }
 
 .wheel {
