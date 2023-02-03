@@ -11,6 +11,7 @@ import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Scrollup from './components/scrollup';
+import Work from './components/work/Work';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Skills />
         <Services />
         <Qualification />
+        <Work />
         <Testimonials />
         <Contact />
 
