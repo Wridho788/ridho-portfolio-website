@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
-import AboutImg from '../../assets/about.jpg';
-import CV from '../../assets/John-Cv.pdf';
+import AboutImg from '../../assets/profile.jpeg';
+import CV from '../../assets/Ridho-resume.pdf';
 import Info from './Info';
 
 const About = () => {
@@ -15,9 +15,10 @@ const About = () => {
           <Info />
 
           <p className='about_description'>
-            Frontend developer, I create web pages with UI / UX user interface,
-            I have years of experience and many clients are happy with the
-            projects carried out.
+            I'm a Frontend Engineer - React JS. I have some work experience as a
+            Programmer especially in the field of Mobile. Some of my programming
+            language skills, ReactJS/React Native, React Typescript, NextJS,
+            Tailwind CSS, Kotlin, and little bit flutter/dart.
           </p>
           <a href={CV} download='' className='button button--flex'>
             Download CV{' '}

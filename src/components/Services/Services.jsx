@@ -18,7 +18,7 @@ const Services = () => {
           <div>
             <i className='uil uil-web-grid services_icon'></i>
             <h3 className='services_title'>
-              Product <br /> Designer
+              Jira <br /> Atlassian
             </h3>
           </div>
           <span className='services_button' onClick={() => toggleTab(1)}>
@@ -70,7 +70,7 @@ const Services = () => {
           <div>
             <i className='uil uil-arrow services_icon'></i>
             <h3 className='services_title'>
-              UI/UX <br /> Designer
+            Self-Documenting <br />Code
             </h3>
           </div>
           <span className='services_button'  onClick={() => toggleTab(2)}>

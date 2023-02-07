@@ -4,10 +4,9 @@ const Data = () => {
   return (
     <div className='home_data'>
       <h1 className='home_title'>Ridho Wahyu</h1>
-      <h3 className='home_subtitle'>Full-stack Developer</h3>
+      <h3 className='home_subtitle'>Front-End Developer</h3>
       <p className='home_description'>
-        I'm Full stack developer based in New York, and I'm very passionate and
-        dedicated to my work.
+      I'm a Frontend Engineer. I have some work experience as a Programmer especially in the field of Mobile. Some of my programming language skills, ReactJS/React Native, React Typescript, NextJS, Tailwind CSS, and NodeJs. And I have good oral and verbal communication skills, and am able to explain Problem Solving, in easy-to-understand terms.
       </p>
       <a href='#contact' className='button button--flex'>
         Say hello

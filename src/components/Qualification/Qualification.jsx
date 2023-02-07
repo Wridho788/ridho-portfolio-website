@@ -20,7 +20,7 @@ const Qualification = () => {
                 ? 'qualification_button qualification_active button--flex'
                 : 'qualification_button button--flex'
             }
-            onClick={()=> toggleTab(1)}>
+            onClick={() => toggleTab(1)}>
             <i className='uil uil-graduation-cap qualification_icon'></i>
             Education
           </div>
@@ -30,7 +30,7 @@ const Qualification = () => {
                 ? 'qualification_button qualification_active button--flex'
                 : 'qualification_button button--flex'
             }
-            onClick={()=> toggleTab(2)}>
+            onClick={() => toggleTab(2)}>
             <i className='uil uil-briefcase-alt qualification_icon'></i>
             Experience
           </div>
@@ -45,13 +45,13 @@ const Qualification = () => {
             <div className='qualification_data'>
               <div>
                 <h3 className='qualification_title'>
-                  Information technologies
+                Bachelor of Informatics Engineering
                 </h3>
                 <span className='qualification_subtitle'>
-                  Bachelor's Degree
+                STMIK IBBI Medan
                 </span>
                 <div className='qualification_calendar'>
-                  <i className='uil uil-calendar-alt'></i> 2016 - 2019
+                  <i className='uil uil-calendar-alt'></i> 2015 - 2019
                 </div>
               </div>
               <div>
@@ -66,17 +66,17 @@ const Qualification = () => {
                 <span className='qualification_line'></span>
               </div>
               <div>
-                <h3 className='qualification_title'>SMK</h3>
-                <span className='qualification_subtitle'>Teladan</span>
+                <h3 className='qualification_title'>Computer and Network Engineering</h3>
+                <span className='qualification_subtitle'>SMK SWASTA TELADAN</span>
                 <div className='qualification_calendar'>
-                  <i className='uil uil-calendar-alt'></i> 2015-2018
+                  <i className='uil uil-calendar-alt'></i> 2015-2012
                 </div>
               </div>
             </div>
             <div className='qualification_data'>
               <div>
-                <h3 className='qualification_title'>SMP</h3>
-                <span className='qualification_subtitle'>AW</span>
+                <h3 className='qualification_title'>MTs. Al-Washliyah</h3>
+                <span className='qualification_subtitle'>Tembung</span>
                 <div className='qualification_calendar'>
                   <i className='uil uil-calendar-alt'></i> 2012 - 2015
                 </div>
@@ -93,10 +93,10 @@ const Qualification = () => {
                 <span className='qualification_line'></span>
               </div>
               <div>
-                <h3 className='qualification_title'>SD</h3>
-                <span className='qualification_subtitle'>Negri</span>
+                <h3 className='qualification_title'>SD Negeri 105323</h3>
+                <span className='qualification_subtitle'>Bakaran Batu</span>
                 <div className='qualification_calendar'>
-                  <i className='uil uil-calendar-alt'></i> 2004-2009
+                  <i className='uil uil-calendar-alt'></i> 2012-2006
                 </div>
               </div>
             </div>
@@ -109,14 +109,12 @@ const Qualification = () => {
             }>
             <div className='qualification_data'>
               <div>
-                <h3 className='qualification_title'>
-                 Full Stack Developer
-                </h3>
+                <h3 className='qualification_title'>Full-Stack Developer</h3>
                 <span className='qualification_subtitle'>
-                  Facebook
+                  PT. Cipta Kerja Arunika Nusantara
                 </span>
                 <div className='qualification_calendar'>
-                  <i className='uil uil-calendar-alt'></i> 2021 - Present
+                  <i className='uil uil-calendar-alt'></i> 08/2021 - present
                 </div>
               </div>
               <div>
@@ -132,37 +130,27 @@ const Qualification = () => {
               </div>
               <div>
                 <h3 className='qualification_title'>Frontend Engineer</h3>
-                <span className='qualification_subtitle'>Google</span>
+                <span className='qualification_subtitle'>
+                  PT. Nirvana Indonesia Yoga
+                </span>
                 <div className='qualification_calendar'>
-                  <i className='uil uil-calendar-alt'></i> 2020-2021
+                  <i className='uil uil-calendar-alt'></i> 05/2020 - 07/2021
                 </div>
               </div>
             </div>
             <div className='qualification_data'>
               <div>
                 <h3 className='qualification_title'>Mobile Programmer</h3>
-                <span className='qualification_subtitle'>Tokopedia</span>
+                <span className='qualification_subtitle'>
+                  PT. Lunata Teknokindo Group
+                </span>
                 <div className='qualification_calendar'>
-                  <i className='uil uil-calendar-alt'></i> 2019-2020
+                  <i className='uil uil-calendar-alt'></i> 01/2018 - 04/2020
                 </div>
               </div>
               <div>
                 <span className='qualification_rounder'></span>
                 <span className='qualification_line'></span>
-              </div>
-            </div>
-            <div className='qualification_data'>
-              <div></div>
-              <div>
-                <span className='qualification_rounder'></span>
-                <span className='qualification_line'></span>
-              </div>
-              <div>
-                <h3 className='qualification_title'>IT Support</h3>
-                <span className='qualification_subtitle'>Tesla</span>
-                <div className='qualification_calendar'>
-                  <i className='uil uil-calendar-alt'></i> 2017 - 2018
-                </div>
               </div>
             </div>
           </div>
