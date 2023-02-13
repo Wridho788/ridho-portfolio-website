@@ -1,13 +1,12 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import './style.css';
 
 const Services = () => {
+  const [toggleState, setToggleState] = useState(0);
 
-    const [toggleState, setToggleState] = useState(0)
-
-    const toggleTab = (id) => {
-        setToggleState(id)
-    }
+  const toggleTab = (id) => {
+    setToggleState(id);
+  };
 
   return (
     <section className='services section' id='services'>
@@ -25,42 +24,37 @@ const Services = () => {
             View More
             <i className='uil uil-arrow-right services_button-icon'></i>
           </span>
-          <div className={toggleState === 1 ? "services_modal active_modal" : "services_modal"}>
+          <div
+            className={
+              toggleState === 1
+                ? 'services_modal active_modal'
+                : 'services_modal'
+            }>
             <div className='services_modal-content'>
-              <i className='uil uil-times services_modal-close' onClick={()=>toggleTab(0)}></i>
-              <h3 className='services_modal-title'>Product Designer</h3>
-              <p className='services_modal-decription'>
-                Service with more than 3 years of experience.Providing quality
-                work to clients and companies.
+              <i
+                className='uil uil-times services_modal-close'
+                onClick={() => toggleTab(0)}></i>
+              <h3 className='services_modal-title'>Agile Scrum With Jira</h3>
+              <p className='services_modal-description'>
+                Service with 3 years of experience.Providing quality work to
+                clients and companies.
               </p>
               <ul className='services_modal-services grid'>
                 <li className='services_modal-service'>
                   <i className='uil uil-check-circle services_modal-icon'></i>
-                  <p className='services_modal-info'>
-                    I develop the user interface.
-                  </p>
+                  <p className='services_modal-info'>Version management</p>
                 </li>
                 <li className='services_modal-service'>
                   <i className='uil uil-check-circle services_modal-icon'></i>
-                  <p className='services_modal-info'>Web page development.</p>
+                  <p className='services_modal-info'>Easy backlog grooming</p>
                 </li>
                 <li className='services_modal-service'>
                   <i className='uil uil-check-circle services_modal-icon'></i>
-                  <p className='services_modal-info'>
-                    I create ux element interactions.
-                  </p>
+                  <p className='services_modal-info'>Sprint planning</p>
                 </li>
                 <li className='services_modal-service'>
                   <i className='uil uil-check-circle services_modal-icon'></i>
-                  <p className='services_modal-info'>
-                    I position your company brand.
-                  </p>
-                </li>
-                <li className='services_modal-service'>
-                  <i className='uil uil-check-circle services_modal-icon'></i>
-                  <p className='services_modal-info'>
-                    Design and mockups of products for companies.
-                  </p>
+                  <p className='services_modal-info'>Story points</p>
                 </li>
               </ul>
             </div>
@@ -70,49 +64,55 @@ const Services = () => {
           <div>
             <i className='uil uil-arrow services_icon'></i>
             <h3 className='services_title'>
-            Self-Documenting <br />Code
+              Self-Documenting <br />
+              Code
             </h3>
           </div>
-          <span className='services_button'  onClick={() => toggleTab(2)}>
+          <span className='services_button' onClick={() => toggleTab(2)}>
             View More
             <i className='uil uil-arrow-right services_button-icon'></i>
           </span>
-          <div className={toggleState === 2 ? "services_modal active_modal" : "services_modal"}>
+          <div
+            className={
+              toggleState === 2
+                ? 'services_modal active_modal'
+                : 'services_modal'
+            }>
             <div className='services_modal-content'>
-              <i className='uil uil-times services_modal-close' onClick={()=>toggleTab(0)}></i>
-              <h3 className='services_modal-title'>UI UX Designer</h3>
-              <p className='services_modal-decription'>
-                Service with more than 3 years of experience.Providing quality
-                work to clients and companies.
+              <i
+                className='uil uil-times services_modal-close'
+                onClick={() => toggleTab(0)}></i>
+              <h3 className='services_modal-title'>Self-Documenting Code</h3>
+              <p className='services_modal-description'>
+                A major argument against documents is that they get outdated as
+                the system evolves. And the faster a system evolves, the faster
+                its documentation gets outdated.
               </p>
               <ul className='services_modal-services grid'>
                 <li className='services_modal-service'>
                   <i className='uil uil-check-circle services_modal-icon'></i>
                   <p className='services_modal-info'>
-                    I develop the user interface.
-                  </p>
-                </li>
-                <li className='services_modal-service'>
-                  <i className='uil uil-check-circle services_modal-icon'></i>
-                  <p className='services_modal-info'>Web page development.</p>
-                </li>
-                <li className='services_modal-service'>
-                  <i className='uil uil-check-circle services_modal-icon'></i>
-                  <p className='services_modal-info'>
-                    I create ux element interactions.
+                    I made documentation via comments for other developers to
+                    know the purpose of the code that I made
                   </p>
                 </li>
                 <li className='services_modal-service'>
                   <i className='uil uil-check-circle services_modal-icon'></i>
                   <p className='services_modal-info'>
-                    I position your company brand.
+                    I created documentation for the continuation of code
+                    development
                   </p>
                 </li>
                 <li className='services_modal-service'>
                   <i className='uil uil-check-circle services_modal-icon'></i>
                   <p className='services_modal-info'>
-                    Design and mockups of products for companies.
+                    I also wrote a line of code to briefly explain the theory
+                    and what it should do
                   </p>
+                </li>
+                <li className='services_modal-service'>
+                  <i className='uil uil-check-circle services_modal-icon'></i>
+                  <p className='services_modal-info'>Code never lies</p>
                 </li>
               </ul>
             </div>
@@ -129,41 +129,47 @@ const Services = () => {
             View More
             <i className='uil uil-arrow-right services_button-icon'></i>
           </span>
-          <div className={toggleState === 3 ? "services_modal active_modal" : "services_modal"}>
+          <div
+            className={
+              toggleState === 3
+                ? 'services_modal active_modal'
+                : 'services_modal'
+            }>
             <div className='services_modal-content'>
-              <i className='uil uil-times services_modal-close' onClick={()=>toggleTab(0)}></i>
+              <i
+                className='uil uil-times services_modal-close'
+                onClick={() => toggleTab(0)}></i>
               <h3 className='services_modal-title'>Visual Designer</h3>
-              <p className='services_modal-decription'>
-                Service with more than 3 years of experience.Providing quality
-                work to clients and companies.
+              <p className='services_modal-description'>
+                A visual designer creates the concepts, artwork and layouts for
+                digital projects based on creative briefs and client meetings.
               </p>
               <ul className='services_modal-services grid'>
                 <li className='services_modal-service'>
                   <i className='uil uil-check-circle services_modal-icon'></i>
                   <p className='services_modal-info'>
-                    I develop the user interface.
-                  </p>
-                </li>
-                <li className='services_modal-service'>
-                  <i className='uil uil-check-circle services_modal-icon'></i>
-                  <p className='services_modal-info'>Web page development.</p>
-                </li>
-                <li className='services_modal-service'>
-                  <i className='uil uil-check-circle services_modal-icon'></i>
-                  <p className='services_modal-info'>
-                    I create ux element interactions.
+                    Establish the look and feel for various interfaces,
+                    including websites, mobile devices, apps
                   </p>
                 </li>
                 <li className='services_modal-service'>
                   <i className='uil uil-check-circle services_modal-icon'></i>
                   <p className='services_modal-info'>
-                    I position your company brand.
+                    Strong problem-solving skills
                   </p>
                 </li>
                 <li className='services_modal-service'>
                   <i className='uil uil-check-circle services_modal-icon'></i>
                   <p className='services_modal-info'>
-                    Design and mockups of products for companies.
+                    Excellent visual, written and verbal communication skills,
+                    along with presentation and negotiation skills
+                  </p>
+                </li>
+                <li className='services_modal-service'>
+                  <i className='uil uil-check-circle services_modal-icon'></i>
+                  <p className='services_modal-info'>
+                    The ability to know when to positively take direction and
+                    work both collaboratively and solo
                   </p>
                 </li>
               </ul>

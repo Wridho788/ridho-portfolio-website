@@ -28,7 +28,7 @@ const Contact = () => {
             <div className='contact_card'>
               <i className='bx bx-mail-send contact_card-icon'></i>
               <h3 className='contact_card-title'>Email</h3>
-              <span className='contact_card-data'>johndoe@email.com</span>
+              <span className='contact_card-data'>wridho246@gmail.com</span>
               <a href='mailto:examplemail@gmail.com' className='contact_button'>
                 write me{' '}
                 <i className='bx bx-right-arrow-alt contact_button-icon'></i>
@@ -37,8 +37,8 @@ const Contact = () => {
             <div className='contact_card'>
               <i className='bx bxl-whatsapp contact_card-icon'></i>
               <h3 className='contact_card-title'>Whatsapp</h3>
-              <span className='contact_card-data'>012 345 678 90</span>
-              <a href='' className='contact_button'>
+              <span className='contact_card-data'>+62 851 5878 1399</span>
+              <a href="https://wa.me/+6285158781399" className='contact_button'>
                 write me{' '}
                 <i className='bx bx-right-arrow-alt contact_button-icon'></i>
               </a>
@@ -46,8 +46,8 @@ const Contact = () => {
             <div className='contact_card'>
               <i className='bx bxl-telegram contact_card-icon'></i>
               <h3 className='contact_card-title'>Telegram</h3>
-              <span className='contact_card-data'>012 345 678 90</span>
-              <a href='' className='contact_button'>
+              <span className='contact_card-data'>+62 851 5878 1399</span>
+              <a href='https://t.me/RidhoMachineBot.' className='contact_button'>
                 write me{' '}
                 <i className='bx bx-right-arrow-alt contact_button-icon'></i>
               </a>
