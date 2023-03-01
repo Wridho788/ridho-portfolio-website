@@ -5,6 +5,7 @@ import Work4 from '../../assets/mobile3.jpeg';
 import Work5 from '../../assets/web2.png';
 import Work6 from '../../assets/web3.png';
 import Work7 from '../../assets/web4.png';
+import Work8 from '../../assets/web5.png';
 
 export const projectsData = [
   {
@@ -55,6 +56,13 @@ export const projectsData = [
     title: 'React Admin Dashboard',
     category: 'Web',
     link: 'https://react-admin-dashboard-pi.vercel.app/',
+  },
+  {
+    id: 8,
+    image: Work8,
+    title: 'Hoo Bank Website',
+    category: 'Web',
+    link: 'https://heo-bank-modern-web.vercel.app/',
   },
 ];
 
