@@ -1,6 +1,45 @@
 import React, { useState } from 'react';
 import './style.css';
 
+const dataExperience = [
+  {
+    id: 0,
+    jobTitle: 'Mobile Programmer',
+    companyName:
+      'PT. Lunata Teknokindo | Komplek Vila Abadi, Setia Budi, Medan',
+    startDate: '2018',
+    endDate: '2020',
+  },
+  {
+    id: 1,
+    jobTitle: 'Frontend Developer',
+    companyName: 'PT. Nirvana Indonesia Yoga | Jln. Bilal Ujung, Medan',
+    startDate: '2020',
+    endDate: '2021',
+  },
+  {
+    id: 2,
+    jobTitle: 'Mobile Programmer',
+    companyName: 'PT. Darkotech Mandiri Indonesia | Jln. H. Adam Malik, Medan',
+    startDate: '2021',
+    endDate: '2021',
+  },
+  {
+    id: 3,
+    jobTitle: 'Full-Stack Developer',
+    companyName:
+      'PT. Cipta Kerja Arunika Nusantara | Komp. Citraland Gamacity, Medan',
+    startDate: '2021',
+    endDate: '2023',
+  },
+  {
+    id: 4,
+    jobTitle: 'Frontend Engineer',
+    companyName: 'PT. Taqnia Utama',
+    startDate: '2023',
+    endDate: 'Now',
+  },
+];
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
 
@@ -45,11 +84,9 @@ const Qualification = () => {
             <div className='qualification_data'>
               <div>
                 <h3 className='qualification_title'>
-                Bachelor of Informatics Engineering
+                  Bachelor of Informatics Engineering
                 </h3>
-                <span className='qualification_subtitle'>
-                STMIK IBBI Medan
-                </span>
+                <span className='qualification_subtitle'>STMIK IBBI Medan</span>
                 <div className='qualification_calendar'>
                   <i className='uil uil-calendar-alt'></i> 2015 - 2019
                 </div>
@@ -66,8 +103,12 @@ const Qualification = () => {
                 <span className='qualification_line'></span>
               </div>
               <div>
-                <h3 className='qualification_title'>Computer and Network Engineering</h3>
-                <span className='qualification_subtitle'>SMK SWASTA TELADAN</span>
+                <h3 className='qualification_title'>
+                  Computer and Network Engineering
+                </h3>
+                <span className='qualification_subtitle'>
+                  SMK SWASTA TELADAN
+                </span>
                 <div className='qualification_calendar'>
                   <i className='uil uil-calendar-alt'></i> 2015-2012
                 </div>
@@ -107,22 +148,39 @@ const Qualification = () => {
                 ? 'qualification_content qualification_content-active'
                 : 'qualification_content '
             }>
-            <div className='qualification_data'>
-              <div>
-                <h3 className='qualification_title'>Full-Stack Developer</h3>
-                <span className='qualification_subtitle'>
-                  PT. Cipta Kerja Arunika Nusantara
-                </span>
-                <div className='qualification_calendar'>
-                  <i className='uil uil-calendar-alt'></i> 08/2021 - present
+            {dataExperience.map((item) => (
+              <div className='qualification_data' key={item.id}>
+                {item.id === 1 || item.id === 3 ? (
+                  <>
+                    <div></div>
+                    <div>
+                      <span className='qualification_rounder'></span>
+                      <span className='qualification_line'></span>
+                    </div>{' '}
+                  </>
+                ) : null}
+                {/*
+                 */}
+                <div>
+                  <h3 className='qualification_title'>{item.jobTitle}</h3>
+                  <span className='qualification_subtitle'>
+                    {item.companyName}
+                  </span>
+                  <div className='qualification_calendar'>
+                    <i className='uil uil-calendar-alt'></i> {item.startDate} -{' '}
+                    {item.endDate}{' '}
+                  </div>
                 </div>
+                {item.id === 0 || item.id === 2 || item.id === 4 ? (
+                  <div>
+                    <span className='qualification_rounder'></span>
+                    <span className='qualification_line'></span>
+                  </div>
+                ) : null}
               </div>
-              <div>
-                <span className='qualification_rounder'></span>
-                <span className='qualification_line'></span>
-              </div>
-            </div>
-            <div className='qualification_data'>
+            ))}
+
+            {/* <div className='qualification_data'>
               <div></div>
               <div>
                 <span className='qualification_rounder'></span>
@@ -152,7 +210,7 @@ const Qualification = () => {
                 <span className='qualification_rounder'></span>
                 <span className='qualification_line'></span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

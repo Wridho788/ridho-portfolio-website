@@ -6,6 +6,9 @@ import Work5 from '../../assets/web2.png';
 import Work6 from '../../assets/web3.png';
 import Work7 from '../../assets/web4.png';
 import Work8 from '../../assets/web5.png';
+import Work9 from '../../assets/web7.png';
+import Work10 from '../../assets/web8.png';
+import Work11 from '../../assets/web9.png';
 
 export const projectsData = [
   {
@@ -63,6 +66,27 @@ export const projectsData = [
     title: 'Hoo Bank Website',
     category: 'Web',
     link: 'https://heo-bank-modern-web.vercel.app/',
+  },
+  {
+    id: 9,
+    image: Work9,
+    title: 'Marketing Retail System Website',
+    category: 'Web',
+    link: 'https://mrs-inl.vercel.app/login',
+  },
+  {
+    id: 10,
+    image: Work10,
+    title: 'Global Graphic Advertising Website',
+    category: 'Web',
+    link: 'https://global-graphic-advertising.vercel.app',
+  },
+  {
+    id: 11,
+    image: Work11,
+    title: 'Jobsearch Website',
+    category: 'Web',
+    link: 'https://jobseeker-one.vercel.app',
   },
 ];
 
