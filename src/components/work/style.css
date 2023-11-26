@@ -21,7 +21,7 @@
 }
 
 .work_container {
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(3, max-content);
   gap: 3rem;
   justify-content: center;
 }
@@ -103,11 +103,11 @@
 
 /* For small devices */
 @media screen and (max-width: 350px) {
- .work_item{
+  .work_item {
     font-size: var(--small-font-size);
- }
+  }
 
- .work_filters{
+  .work_filters {
     column-gap: 0.25rem;
- }
+  }
 }

@@ -9,6 +9,7 @@ import Work8 from '../../assets/web5.png';
 import Work9 from '../../assets/web7.png';
 import Work10 from '../../assets/web8.png';
 import Work11 from '../../assets/web9.png';
+import Work12 from '../../assets/web10.png';
 
 export const projectsData = [
   {
@@ -87,6 +88,13 @@ export const projectsData = [
     title: 'Jobsearch Website',
     category: 'Web',
     link: 'https://jobseeker-one.vercel.app',
+  },
+  {
+    id: 12,
+    image: Work12,
+    title: 'Ecommerce Cloting Website',
+    category: 'Web',
+    link: 'https://ecommerce-clothing-six.vercel.app',
   },
 ];
 

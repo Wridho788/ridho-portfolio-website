@@ -35,7 +35,7 @@ const dataExperience = [
   {
     id: 4,
     jobTitle: 'Frontend Engineer',
-    companyName: 'PT. Taqnia Utama',
+    companyName: 'PT. Taqnia Utama | KEK Sei Mangkei, Simalungun',
     startDate: '2023',
     endDate: 'Now',
   },
@@ -179,38 +179,6 @@ const Qualification = () => {
                 ) : null}
               </div>
             ))}
-
-            {/* <div className='qualification_data'>
-              <div></div>
-              <div>
-                <span className='qualification_rounder'></span>
-                <span className='qualification_line'></span>
-              </div>
-              <div>
-                <h3 className='qualification_title'>Frontend Engineer</h3>
-                <span className='qualification_subtitle'>
-                  PT. Nirvana Indonesia Yoga
-                </span>
-                <div className='qualification_calendar'>
-                  <i className='uil uil-calendar-alt'></i> 05/2020 - 07/2021
-                </div>
-              </div>
-            </div>
-            <div className='qualification_data'>
-              <div>
-                <h3 className='qualification_title'>Mobile Programmer</h3>
-                <span className='qualification_subtitle'>
-                  PT. Lunata Teknokindo Group
-                </span>
-                <div className='qualification_calendar'>
-                  <i className='uil uil-calendar-alt'></i> 01/2018 - 04/2020
-                </div>
-              </div>
-              <div>
-                <span className='qualification_rounder'></span>
-                <span className='qualification_line'></span>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
