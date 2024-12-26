@@ -10,6 +10,7 @@ import Work9 from '../../assets/web7.png';
 import Work10 from '../../assets/web8.png';
 import Work11 from '../../assets/web9.png';
 import Work12 from '../../assets/web10.png';
+import Work13 from '../../assets/mobile.jpg';
 
 export const projectsData = [
   {
@@ -95,6 +96,13 @@ export const projectsData = [
     title: 'Ecommerce Cloting Website',
     category: 'Web',
     link: 'https://ecommerce-clothing-six.vercel.app',
+  },
+  {
+    id: 13,
+    image: Work13,
+    title: 'ERP POS Cashier App',
+    category: 'App',
+    link: '#',
   },
 ];
 

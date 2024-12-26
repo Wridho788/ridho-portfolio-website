@@ -7,36 +7,50 @@ const dataExperience = [
     jobTitle: 'Mobile Programmer',
     companyName:
       'PT. Lunata Teknokindo | Komplek Vila Abadi, Setia Budi, Medan',
-    startDate: '2018',
-    endDate: '2020',
+    startDate: 'January - 2018',
+    endDate: 'February - 2020',
   },
   {
     id: 1,
-    jobTitle: 'Frontend Developer',
+    jobTitle: 'Frontend Engineer',
     companyName: 'PT. Nirvana Indonesia Yoga | Jln. Bilal Ujung, Medan',
-    startDate: '2020',
-    endDate: '2021',
+    startDate: 'March - 2020',
+    endDate: 'June - 2021',
   },
   {
     id: 2,
-    jobTitle: 'Mobile Programmer',
+    jobTitle: 'Mobile Application Developer',
     companyName: 'PT. Darkotech Mandiri Indonesia | Jln. H. Adam Malik, Medan',
-    startDate: '2021',
-    endDate: '2021',
+    startDate: 'August - 2021',
+    endDate: 'October - 2021',
   },
   {
     id: 3,
-    jobTitle: 'Full-Stack Developer',
+    jobTitle: 'Mobile Application Developer',
     companyName:
       'PT. Cipta Kerja Arunika Nusantara | Komp. Citraland Gamacity, Medan',
-    startDate: '2021',
-    endDate: '2023',
+    startDate: 'November - 2021',
+    endDate: 'February - 2023',
   },
   {
     id: 4,
     jobTitle: 'Frontend Engineer',
     companyName: 'PT. Taqnia Utama | KEK Sei Mangkei, Simalungun',
-    startDate: '2023',
+    startDate: 'March - 2023',
+    endDate: 'July - 2024',
+  },
+  {
+    id: 5,
+    jobTitle: 'Mobile Application Developer',
+    companyName: 'Oxbridge Institute | Medan',
+    startDate: 'August - 2024',
+    endDate: 'December - 2024',
+  },
+  {
+    id: 6,
+    jobTitle: 'Odoo Developer',
+    companyName: 'Digisofl Consultant Technology | Medan ',
+    startDate: 'December - 2024',
     endDate: 'Now',
   },
 ];
@@ -143,41 +157,34 @@ const Qualification = () => {
             </div>
           </div>
           <div
-            className={
-              toggleState === 2
-                ? 'qualification_content qualification_content-active'
-                : 'qualification_content '
-            }>
+            className={`qualification_content ${toggleState === 2 ? 'qualification_content-active' : ''}`}>
             {dataExperience.map((item) => (
               <div className='qualification_data' key={item.id}>
-                {item.id === 1 || item.id === 3 ? (
+                {item.id % 2 !== 0 && (
                   <>
                     <div></div>
                     <div>
                       <span className='qualification_rounder'></span>
                       <span className='qualification_line'></span>
-                    </div>{' '}
+                    </div>
                   </>
-                ) : null}
-                {/*
-                 */}
+                )}
+
                 <div>
                   <h3 className='qualification_title'>{item.jobTitle}</h3>
-                  <span className='qualification_subtitle'>
-                    {item.companyName}
-                  </span>
+                  <span className='qualification_subtitle'>{item.companyName}</span>
                   <div className='qualification_calendar'>
-                    <i className='uil uil-calendar-alt'></i> {item.startDate} -{' '}
-                    {item.endDate}{' '}
+                    <i className='uil uil-calendar-alt'></i> {item.startDate} - {item.endDate}
                   </div>
                 </div>
-                {item.id === 0 || item.id === 2 || item.id === 4 ? (
+
+                {item.id % 2 === 0 && (
                   <div>
                     <span className='qualification_rounder'></span>
                     <span className='qualification_line'></span>
                   </div>
-                ) : null}
-              </div>
+                )}
+                </div>
             ))}
           </div>
         </div>
