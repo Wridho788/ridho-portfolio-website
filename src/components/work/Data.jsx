@@ -124,7 +124,7 @@ export const projectsData = [
   {
     id: 16,
     image: Work16,
-    title: 'PWA LPJUtaru Kim Siantar',
+    title: 'PWA LPJUTARU KIM SIANTAR',
     category: 'PWA',
     link: 'https://lpjutarukimsiantar-app.vercel.app/Login',
   },
