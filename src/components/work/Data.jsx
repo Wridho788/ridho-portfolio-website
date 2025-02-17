@@ -11,6 +11,9 @@ import Work10 from '../../assets/web8.png';
 import Work11 from '../../assets/web9.png';
 import Work12 from '../../assets/web10.png';
 import Work13 from '../../assets/mobile.jpg';
+import Work14 from '../../assets/web11.png';
+import Work15 from '../../assets/web12.png';
+import Work16 from '../../assets/pwa1.png'
 
 export const projectsData = [
   {
@@ -104,6 +107,27 @@ export const projectsData = [
     category: 'App',
     link: '#',
   },
+  {
+    id: 14,
+    image: Work14,
+    title: 'Github Viewer',
+    category: 'Web',
+    link: 'https://github-viewer-chi.vercel.app',
+  },
+  {
+    id: 15,
+    image: Work15,
+    title: 'Startup Landing',
+    category: 'Web',
+    link: 'https://nakive-company.vercel.app/',
+  },
+  {
+    id: 16,
+    image: Work16,
+    title: 'PWA LPJUtaru Kim Siantar',
+    category: 'PWA',
+    link: 'https://lpjutarukimsiantar-app.vercel.app/Login',
+  },
 ];
 
-export const projectsNav = [{ name: 'All' }, { name: 'Web' }, { name: 'App' }];
+export const projectsNav = [{ name: 'All' }, { name: 'Web' }, { name: 'App' }, {name: 'PWA'}];

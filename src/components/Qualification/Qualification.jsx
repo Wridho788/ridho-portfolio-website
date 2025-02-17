@@ -44,15 +44,8 @@ const dataExperience = [
     jobTitle: 'Mobile Application Developer',
     companyName: 'Oxbridge Institute | Medan',
     startDate: 'August - 2024',
-    endDate: 'December - 2024',
-  },
-  {
-    id: 6,
-    jobTitle: 'Odoo Developer',
-    companyName: 'Digisofl Consultant Technology | Medan ',
-    startDate: 'December - 2024',
-    endDate: 'Now',
-  },
+    endDate: 'January - 2025',
+  }
 ];
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
